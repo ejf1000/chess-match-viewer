@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Match Viewer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Chessboard CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="back-button">← Back to Matches</a>
+        </nav>
+    </header>
+
+    <main class="viewer-container">
+        <!-- Match Information Panel -->
+        <div class="match-info-panel">
+            <h1 id="match-title">Loading...</h1>
+            
+            <div class="match-details">
+                <div class="detail-item">
+                    <strong>Players:</strong>
+                    <div id="players-info"></div>
+                </div>
+                <div class="detail-item">
+                    <strong>Date:</strong>
+                    <span id="match-date"></span>
+                </div>
+                <div class="detail-item">
+                    <strong>Location:</strong>
+                    <span id="match-location"></span>
+                </div>
+                <div class="detail-item">
+                    <strong>Result:</strong>
+                    <span id="match-result"></span>
+                </div>
+            </div>
+
+            <div class="match-importance">
+                <h3>Why This Match Matters</h3>
+                <p id="importance-text"></p>
+            </div>
+
+            <div class="match-strategy">
+                <h3>Strategic Overview</h3>
+                <p id="strategy-text"></p>
+            </div>
+        </div>
+
+        <!-- Chess Board and Controls -->
+        <div class="board-container">
+            <div id="board" class="chess-board"></div>
+            
+            <div class="controls">
+                <button id="start-btn" class="control-btn" title="Go to start">⏮️ Start</button>
+                <button id="prev-btn" class="control-btn" title="Previous move">◄ Back</button>
+                <button id="next-btn" class="control-btn" title="Next move">Next ►</button>
+                <button id="end-btn" class="control-btn" title="Go to end">End ⏭️</button>
+            </div>
+
+            <div class="move-info">
+                <div class="move-counter">
+                    Move: <span id="current-move">0</span> / <span id="total-moves">0</span>
+                </div>
+                <div class="current-move-display">
+                    <span id="move-notation"></span>
+                </div>
+            </div>
+
+            <!-- Commentary Panel -->
+            <div class="commentary-panel">
+                <h3>💡 Commentary</h3>
+                <div id="commentary-text">
+                    <p>Use the controls to navigate through the match. Commentary will appear here for key moves.</p>
+                </div>
+            </div>
+
+            <!-- Move History -->
+            <div class="move-history">
+                <h3>Move History</h3>
+                <div id="move-list"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Include Chess Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+    
+    <!-- Our Scripts -->
+    <script src="js/matches.js"></script>
+    <script src="js/viewer.js"></script>
+</body>
+</html>
