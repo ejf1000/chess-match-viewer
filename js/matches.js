@@ -25,10 +25,10 @@ const matches = [
             0: "We begin with the starting position. Deep Blue will play as White, Kasparov as Black.",
             1: "e4 - Deep Blue opens with the King's Pawn, the most popular first move in chess.",
             2: "c6 - Kasparov responds with the Caro-Kann Defense, a solid and strategic opening.",
-            8: "Nxe6! - A bold knight sacrifice by Deep Blue. This type of aggressive computer play was unexpected.",
-            11: "Bf4 - Deep Blue continues its aggressive plan, maintaining pressure.",
-            18: "Rxe7! - The decisive blow. Deep Blue sacrifices the exchange but gains a winning position.",
-            19: "c4 and Kasparov resigned. The computer's position is completely winning."
+            15: "Nxe6! - A bold knight sacrifice by Deep Blue. This type of aggressive computer play was unexpected.",
+            21: "Bf4 - Deep Blue continues its aggressive plan, maintaining pressure.",
+            35: "Rxe7! - The decisive blow. Deep Blue sacrifices the exchange but gains a winning position.",
+            37: "c4 and Kasparov resigned. The computer's position is completely winning."
         }
     },
     {
@@ -59,11 +59,11 @@ const matches = [
         commentary: {
             0: "The starting position of one of the greatest games ever played.",
             1: "c4 - Fischer opens with the English Opening, a flexible choice.",
-            10: "Nxd5 - Fischer captures, leading to a subtle positional struggle.",
-            19: "Nxe6! - Fischer sacrifices a knight for long-term positional pressure.",
-            27: "Rxf5 - Fischer's attack is perfectly coordinated.",
-            38: "Rxf6! - The final sacrifice. Black's position collapses.",
-            41: "Qf4 - Spassky resigned here. Checkmate is unavoidable. A masterpiece!"
+            20: "Nxd5 - Fischer captures, leading to a subtle positional struggle.",
+            37: "Nxe6! - Fischer sacrifices a knight for long-term positional pressure.",
+            53: "Rxf5 - Fischer's attack is perfectly coordinated.",
+            75: "Rxf6! - The final sacrifice. Black's position collapses.",
+            81: "Qf4 - Spassky resigned here. Checkmate is unavoidable. A masterpiece!"
         }
     },
     {
@@ -90,12 +90,12 @@ const matches = [
         commentary: {
             0: "The game begins. Morphy has White against two aristocratic opponents consulting together.",
             1: "e4 - Morphy opens aggressively, as was his style.",
-            4: "dxe5 - Morphy accepts the pawn trade, gaining central control.",
-            7: "Qb3! - Morphy's queen attacks both f7 and b7, creating immediate threats.",
-            10: "Nxb5! - Morphy sacrifices his knight to destroy Black's pawn structure.",
-            13: "Rxd7! - Another brilliant sacrifice! Morphy gives up his rook.",
-            15: "Bxd7+! - The final piece sacrifice, forcing Black's pieces into fatal positions.",
-            17: "Rd8# - Checkmate! A queen sacrifice leading to back-rank mate. Pure brilliance!"
+            7: "dxe5 - Morphy accepts the pawn trade, gaining central control.",
+            13: "Qb3! - Morphy's queen attacks both f7 and b7, creating immediate threats.",
+            19: "Nxb5! - Morphy sacrifices his knight to destroy Black's pawn structure.",
+            25: "Rxd7! - Another brilliant sacrifice! Morphy gives up his rook.",
+            29: "Bxd7+! - The final piece sacrifice, forcing Black's pieces into fatal positions.",
+            33: "Rd8# - Checkmate! A queen sacrifice leading to back-rank mate. Pure brilliance!"
         }
     },
     {
@@ -123,13 +123,13 @@ const matches = [
 26. Bxc4 Nf2 27. Kg2 Nxh1 28. Kxh1 Rd8 29. Nxd8 Bxd8 0-1`,
         commentary: {
             0: "Starting position. White is International Master Donald Byrne, Black is 13-year-old Bobby Fischer.",
-            11: "Bg5 - Byrne develops aggressively, but Fischer has a stunning surprise prepared.",
-            14: "Bxe7 - Byrne captures a pawn, but Fischer's position is secretly winning.",
-            17: "Be2+!! - The famous queen sacrifice! Fischer gives up his queen for unstoppable attack.",
-            18: "Kg1 - Forced. White accepts the queen.",
-            19: "Nxd1+ - Fischer's pieces swarm the white king. Material doesn't matter anymore.",
-            22: "Qxb2 - White's pieces are uncoordinated and helpless.",
-            29: "Bxd8 and Byrne resigned. The 13-year-old prodigy had played a game for the ages!"
+            21: "Bg5 - Byrne develops aggressively, but Fischer has a stunning surprise prepared.",
+            27: "Bxe7 - Byrne captures a pawn, but Fischer's position is secretly winning.",
+            33: "Be2+!! - The famous queen sacrifice! Fischer gives up his queen for unstoppable attack.",
+            35: "Kg1 - Forced. White must move the king.",
+            37: "Nxd1+ - Fischer's pieces swarm the white king. Material doesn't matter anymore.",
+            43: "Qb2 - White tries to trade queens but it's too late.",
+            57: "Bxd8 - Byrne resigned after this move. The 13-year-old prodigy had played a game for the ages!"
         }
     },
     {
@@ -157,13 +157,13 @@ const matches = [
 26. Nxf5 Bxf5 27. Qxf5 Rxb2+ 28. Rxb2 Rxb2+ 29. Ka1 Qc5 0-1`,
         commentary: {
             0: "World Championship game between two legends. Anand is White, Kasparov Black.",
-            6: "Be3 - Anand chooses a solid system against the Sicilian Defense.",
-            9: "g4!? - Anand plays aggressively, launching a pawn storm on the kingside.",
-            14: "Nd5 - A thematic knight jump, but Kasparov has calculated deeply.",
-            18: "h5 - Anand tries to maintain the initiative with aggressive pawn play.",
-            25: "g6 - The position becomes extremely sharp and tactical.",
-            28: "Rxb2+ - Kasparov's attack crashes through on the queenside.",
-            29: "Qc5 and Anand resigned. Kasparov's pieces dominate completely."
+            11: "Be3 - Anand chooses a solid system against the Sicilian Defense.",
+            17: "g4!? - Anand plays aggressively, launching a pawn storm on the kingside.",
+            27: "Nd5 - A thematic knight jump, but Kasparov has calculated deeply.",
+            35: "h5 - Anand tries to maintain the initiative with aggressive pawn play.",
+            49: "g6 - The position becomes extremely sharp and tactical.",
+            55: "Rxb2+ - Kasparov's attack crashes through on the queenside.",
+            57: "Qc5 - Anand resigned. Kasparov's pieces dominate completely."
         }
     }
 ];
