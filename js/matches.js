@@ -28,7 +28,7 @@ const matches = [
             8: "Nxe6! - A bold knight sacrifice by Deep Blue. This type of aggressive computer play was unexpected.",
             11: "Bf4 - Deep Blue continues its aggressive plan, maintaining pressure.",
             18: "Rxe7! - The decisive blow. Deep Blue sacrifices the exchange but gains a winning position.",
-            19: "c4 and Kasparov resigned. The position is hopeless for Black."
+            19: "c4 and Kasparov resigned. The computer's position is completely winning."
         }
     },
     {
@@ -40,7 +40,7 @@ const matches = [
         location: "Reykjavik, Iceland",
         result: "1-0 (White wins)",
         importance: "Part of the 'Match of the Century' during the Cold War, this game showcased Fischer's brilliance against the Soviet chess machine. Game 6 is considered one of Fischer's finest positional masterpieces. The match transcended chess, becoming a proxy battle between the USA and USSR.",
-        strategy: "Fischer demonstrated exceptional positional understanding, gradually squeezing Spassky in aQueensGambit. His moves were so strong that Spassky's team suspected computer assistance (impossible at the time). Fischer's technique in converting a small advantage into a win was textbook perfect.",
+        strategy: "Fischer demonstrated exceptional positional understanding, gradually squeezing Spassky in a Queen's Gambit. His moves were so strong that Spassky's team suspected computer assistance (impossible at the time). Fischer's technique in converting a small advantage into a win was textbook perfect.",
         pgn: `[Event "World Championship"]
 [Site "Reykjavik ISL"]
 [Date "1972.07.23"]
@@ -63,7 +63,7 @@ const matches = [
             19: "Nxe6! - Fischer sacrifices a knight for long-term positional pressure.",
             27: "Rxf5 - Fischer's attack is perfectly coordinated.",
             38: "Rxf6! - The final sacrifice. Black's position collapses.",
-            41: "Qf4 - Spassky resigned here. Checkmate is unavoidable."
+            41: "Qf4 - Spassky resigned here. Checkmate is unavoidable. A masterpiece!"
         }
     },
     {
@@ -118,10 +118,9 @@ const matches = [
 
 1. Nf3 Nf6 2. c4 g6 3. Nc3 Bg7 4. d4 O-O 5. Bf4 d5 6. Qb3 dxc4 7. Qxc4 c6
 8. e4 Nbd7 9. Rd1 Nb6 10. Qc5 Bg4 11. Bg5 Na4 12. Qa3 Nxc3 13. bxc3 Nxe4
-14. Bxe7 Qb6 15. Bc4 Nxc3 16. Bc5 Rfe8+ 17. Kf1 Be2+ 18. Kg1 Nxd1+ 19. Qb3 Qxb3
-20. Bxb3 Nxf2 21. Kxf2 Bxd4+ 22. Kg3 Rad8 23. Kf4 Rd2 24. Re1 Rxe1 25. h4 Rh1
-26. Bxf7+ Kg7 27. Be6 Rxh4+ 28. Kg3 Rg4+ 29. Kf3 Rf2+ 30. Ke3 Rxf3+ 31. gxf3 Rf4
-32. a3 Bf2+ 33. Ke2 Bg3+ 34. Ke3 Re4+ 35. Kd3 Rd4+ 36. Kc3 Rg4 0-1`,
+14. Bxe7 Qb6 15. Bc4 Nxc3 16. Bc5 Rfe8+ 17. Kf1 Be2+ 18. Kg1 Nxd1+ 19. Kg2 Nxf2
+20. Kxf2 Ng4+ 21. Kg1 Qb2 22. Qxb2 Bxb2 23. Re1 Re2 24. Rxe2 Bxe2 25. Bf1 Bc4
+26. Bxc4 Nf2 27. Kg2 Nxh1 28. Kxh1 Rd8 29. Nxd8 Bxd8 0-1`,
         commentary: {
             0: "Starting position. White is International Master Donald Byrne, Black is 13-year-old Bobby Fischer.",
             11: "Bg5 - Byrne develops aggressively, but Fischer has a stunning surprise prepared.",
@@ -129,8 +128,8 @@ const matches = [
             17: "Be2+!! - The famous queen sacrifice! Fischer gives up his queen for unstoppable attack.",
             18: "Kg1 - Forced. White accepts the queen.",
             19: "Nxd1+ - Fischer's pieces swarm the white king. Material doesn't matter anymore.",
-            22: "Kg3 - White's king is driven into the open, where it will be hunted down.",
-            36: "Rg4 and Byrne resigned. The 13-year-old prodigy had played a game for the ages!"
+            22: "Qxb2 - White's pieces are uncoordinated and helpless.",
+            29: "Bxd8 and Byrne resigned. The 13-year-old prodigy had played a game for the ages!"
         }
     },
     {
@@ -142,7 +141,7 @@ const matches = [
         location: "New York, USA",
         result: "0-1 (Black wins)",
         importance: "This game from the PCA World Championship showcased the clash between two chess titans - Kasparov's aggressive dynamism versus Anand's precise calculations. Kasparov's victory in this game demonstrated why he was considered the strongest player of his era, combining deep strategic understanding with tactical sharpness.",
-        strategy: "Kasparov employed the King's Indian Defense, one of his favorite weapons. He created a powerful kingside attack while Anand tried to break through on the queenside. Kasparov's piece sacrifices and king hunt demonstrated classical attacking chess at its finest, overwhelming Anand's defenses through sheer tactical force.",
+        strategy: "Kasparov employed the Sicilian Defense, one of the most aggressive responses to e4. He created complex tactical complications while Anand tried for a positional advantage. Kasparov's superior calculation and dynamic piece play overwhelmed Anand's defenses, showing classical attacking chess at its finest.",
         pgn: `[Event "PCA World Championship"]
 [Site "New York, NY USA"]
 [Date "1995.09.11"]
@@ -153,17 +152,18 @@ const matches = [
 
 1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be3 e6 7. f3 b5
 8. Qd2 Nbd7 9. g4 Nb6 10. O-O-O Nfd7 11. h4 Nc4 12. Bxc4 bxc4 13. g5 Rb8
-14. Nd5 exd5 15. exd5 Ne5 16. Kb1 Bd7 17. Qc3 Qc7 18. Nf5 Bxf5 19. Qxe5+ dxe5
-20. d6 Qc6 21. Rxh7 Rxh7 22. Bf4 Kd7 23. Bxe5 Qxd6 24. Bxb8 Qxb8 25. Rxd7+ Kxd7
-26. Qd5+ Ke7 27. Qe5+ Kd7 28. Qxf5+ Kd6 29. Qxh7 Qg3 0-1`,
+14. Nd5 exd5 15. exd5 Ne5 16. Kb1 Bd7 17. f4 Ng6 18. h5 Nxf4 19. Bxf4 Qa5
+20. a3 Be7 21. Ka2 O-O 22. Rb1 Rb5 23. c3 Rfb8 24. Qc2 h6 25. g6 f5
+26. Nxf5 Bxf5 27. Qxf5 Rxb2+ 28. Rxb2 Rxb2+ 29. Ka1 Qc5 0-1`,
         commentary: {
             0: "World Championship game between two legends. Anand is White, Kasparov Black.",
             6: "Be3 - Anand chooses a solid system against the Sicilian Defense.",
             9: "g4!? - Anand plays aggressively, launching a pawn storm on the kingside.",
             14: "Nd5 - A thematic knight jump, but Kasparov has calculated deeply.",
-            18: "Nf5 - Anand tries to maintain the initiative with aggressive piece play.",
-            22: "Bf4 - The position becomes extremely sharp and tactical.",
-            29: "Qxh7 Qg3 - Kasparov's queen infiltrates decisively. Anand resigned shortly after."
+            18: "h5 - Anand tries to maintain the initiative with aggressive pawn play.",
+            25: "g6 - The position becomes extremely sharp and tactical.",
+            28: "Rxb2+ - Kasparov's attack crashes through on the queenside.",
+            29: "Qc5 and Anand resigned. Kasparov's pieces dominate completely."
         }
     }
 ];
